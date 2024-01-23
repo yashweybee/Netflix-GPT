@@ -1,1 +1,24 @@
 -For Validation use => formik validation library
+- Create saperate file for validation in utils
+- Configure firebase
+    -configure firebase on website (4 steps)
+    -cmd: firebase login
+    -cmd: firebase init
+        -  Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+        (for deploy app - cmd: firebase deploy)
+
+
+- Redux
+    -cmd: npm i -D @reduxjs/toolkit
+    -cmd: npm i react-redux
+    -create store
+        -create slice
+    -Provide store to app. <Provider store={appStore} >....
+
+
+-- update store when user auth state change (onAuthStateChanged)
+-- dispatch
+-- useNavigate() hook for navigation
+-- useSelector() --> get data from the store
+    
