@@ -21,4 +21,10 @@
 -- dispatch
 -- useNavigate() hook for navigation
 -- useSelector() --> get data from the store
+
+--useEffect and some other thing renders twise because of  <React.StrictMode>
+    so basically, react doing some extra rendering tp check for some inconsistancy betweeen calls
+    -Tis only happens in development mode.
     
+
+--get movies data and added to moviesSlice

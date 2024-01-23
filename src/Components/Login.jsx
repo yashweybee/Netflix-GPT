@@ -9,6 +9,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
+import { BG_URL, AVATAR_URL } from "../utils/constants";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -43,7 +44,7 @@ const Login = () => {
           // updating the user profile data
           updateProfile(user, {
             displayName: nameRef.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/86155339?v=4",
+            photoURL: AVATAR_URL,
           })
             .then(() => {
               const { uid, email, displayName, photoURL } = auth.currentUser;
@@ -83,10 +84,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute ">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/9134db96-10d6-4a64-a619-a21da22f8999/a449fabb-05e4-4c8a-b062-b0bec7d03085/IN-hi-20240115-trifectadaily-perspective_alpha_website_large.jpg"
-          alt="background-img"
-        />
+        <img src={BG_URL} alt="background-img" />
       </div>
       <form
         onSubmit={(e) => {

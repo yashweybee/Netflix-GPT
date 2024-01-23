@@ -1,16 +1,7 @@
 import React, { useEffect } from "react";
 import Login from "./Login";
 import Browse from "./Browse";
-import {
-  Outlet,
-  RouterProvider,
-  createBrowserRouter,
-  useNavigate,
-} from "react-router-dom";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../utils/firebase";
-import { useDispatch } from "react-redux";
-import { addUser, removeUser } from "../utils/userSlice";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const Body = () => {
   const appRouter = createBrowserRouter([
