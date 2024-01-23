@@ -1,12 +1,7 @@
-import './App.css'
-
+import "./App.css";
+import Body from "./Components/Body";
 function App() {
-
-  return (
-   <h1 className='bg-orange-500'>
-    Hello
-   </h1>
-  )
+  return <Body />;
 }
 
-export default App
+export default App;
