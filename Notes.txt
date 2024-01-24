@@ -28,3 +28,9 @@
     
 
 --get movies data and added to moviesSlice
+
+--configur GPT
+
+--whle dispatching if you want to send multiple data in single action method than, send object {movieName, MovieData} like this
+
+--Memoisation

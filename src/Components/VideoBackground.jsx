@@ -9,7 +9,6 @@ const VideoBackground = ({ movieId }) => {
 
   if (!trailerVideo) return;
 
-  //   console.log(trailerVideo.key);
   return (
     <div className="w-screen">
       <iframe
