@@ -12,7 +12,7 @@ const MainContainer = () => {
 
   //   Movie that will be show with trailer
   const mainMovie = nowPlayingMovies[0];
-  console.log(mainMovie);
+  // console.log(mainMovie);
   const { original_title, overview, id } = mainMovie;
 
   return (

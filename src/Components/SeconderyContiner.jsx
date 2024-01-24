@@ -6,7 +6,7 @@ const SeconderyContiner = () => {
   const movies = useSelector((store) => store?.movies);
   if (!movies) return;
 
-  console.log(movies?.populerMovies);
+  // console.log(movies?.populerMovies);
 
   return (
     <div className="bg-black">
